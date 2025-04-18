@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "antfu.goto-alias",
+    "antfu.iconify",
+    "eamodio.gitlens",
+    "GitHub.copilot",
+    "GitHub.vscode-pull-request-github",
+    "GitHub.vscode-github-actions",
+    "Gruntfuggly.todo-tree",
+    "naumovs.color-highlight",
+    "Orta.vscode-twoslash-queries",
+    "richie5um2.vscode-sort-json",
+    "streetsidesoftware.code-spell-checker",
+    "Vue.volar",
+    "yoavbls.pretty-ts-errors",
+    "yzhang.markdown-all-in-one"
+  ]
+}
