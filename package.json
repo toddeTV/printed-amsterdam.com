@@ -1,0 +1,56 @@
+{
+  "name": "printed-amsterdam.com",
+  "type": "module",
+  "packageManager": "pnpm@10.8.1+sha512.c50088ba998c67b8ca8c99df8a5e02fd2ae2e2b29aaf238feaa9e124248d3f48f9fb6db2424949ff901cffbb5e0f0cc1ad6aedb602cd29450751d11c35023677",
+  "description": "This is the project for the https://printed-amsterdam.com conference website build with ❤️ & NuxtJS.",
+  "author": "Thorsten Seyschab <business@todde.tv> (https://todde.tv/)",
+  "contributors": [
+    {
+      "name": "Thorsten Seyschab",
+      "email": "business@todde.tv",
+      "url": "https://todde.tv/"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://printed-amsterdam.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toddeTV/printed-amsterdam.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toddeTV/printed-amsterdam.com/issues"
+  },
+  "keywords": [
+    "website",
+    "vuejs",
+    "typescript",
+    "web",
+    "mit",
+    "vue",
+    "nuxt",
+    "mit-license",
+    "nuxtjs",
+    "vite",
+    "nuxt3 "
+  ],
+  "engines": {
+    "node": "~22",
+    "pnpm": "~10"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "dev:network": "nuxt dev --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "~3.16.2",
+    "vue": "~3.5.13"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.3",
+    "vue-router": "~4.5.0"
+  }
+}
