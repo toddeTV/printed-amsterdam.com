@@ -14,4 +14,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui',
   ],
+
+  ui: { // for `@nuxt/ui`
+    fonts: true, // use `@nuxt/fonts`
+  },
 })
