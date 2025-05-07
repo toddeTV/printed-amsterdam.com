@@ -48,6 +48,10 @@
     "pcss",
     "postcss"
   ],
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "files.autoSave": "onFocusChange",
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "javascript.preferences.importModuleSpecifierEnding": "js",
@@ -62,9 +66,14 @@
     "pnpm-lock.yaml": true
   },
   "search.useIgnoreFiles": false,
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifierEnding": "js",
   "typescript.preferences.renameMatchingJsxTags": true,
   "typescript.tsdk": "node_modules/typescript/lib"
+
 }
