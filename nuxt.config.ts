@@ -13,9 +13,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
+    '@nuxt/image',
   ],
 
   ui: { // for `@nuxt/ui`
     fonts: true, // use `@nuxt/fonts`
+  },
+
+  image: { // for `@nuxt/image`
   },
 })
