@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui',
     '@nuxt/image',
+    '@nuxt/content',
   ],
 
   ui: { // for `@nuxt/ui`
@@ -21,5 +22,8 @@ export default defineNuxtConfig({
   },
 
   image: { // for `@nuxt/image`
+  },
+
+  content: { // for `@nuxt/content`
   },
 })
