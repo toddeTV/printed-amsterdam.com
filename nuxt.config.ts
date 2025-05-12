@@ -25,5 +25,13 @@ export default defineNuxtConfig({
   },
 
   content: { // for `@nuxt/content`
+    preview: {
+      api: 'https://api.nuxt.studio',
+      gitInfo: {
+        name: 'printed-amsterdam.com',
+        owner: 'toddeTV',
+        url: 'https://github.com/toddeTV/printed-amsterdam.com',
+      },
+    },
   },
 })
