@@ -18,6 +18,9 @@ importers:
       '@antfu/eslint-config':
         specifier: ~4.13.0
         version: 4.13.0(@typescript-eslint/utils@8.32.0(eslint@9.0.0)(typescript@5.6.3))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.0.0))(eslint@9.0.0)(typescript@5.6.3)
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.34
+        version: 1.2.34
       '@nuxt/content':
         specifier: ~3.5.1
         version: 3.5.1(magicast@0.3.5)(typescript@5.6.3)
@@ -660,6 +663,9 @@ packages:
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
+
+  '@iconify-json/simple-icons@1.2.34':
+    resolution: {integrity: sha512-1FRWEA94hSl5zmBogRh6lQL36l7bVTfrl0n5+QJ+WmXmw70RccPT5phqeiSynwo3IhUWKoW2LiajyUMeweXW8g==}
 
   '@iconify/collections@1.0.546':
     resolution: {integrity: sha512-ftDzfvN+9lX0zNeKrgunE2HmWGfek7hKJJC6R16pc/JU7Wv0uibJ6MS2cRlmrjUFvtl0Kl2c2wbZZGRgFmKvTg==}
@@ -6529,6 +6535,10 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/object-schema@2.0.3': {}
+
+  '@iconify-json/simple-icons@1.2.34':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/collections@1.0.546':
     dependencies:
