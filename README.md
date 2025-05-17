@@ -63,4 +63,12 @@ type foo = { bar: 2 }
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
+The source code in this repository is licensed under the [MIT License](./LICENSE.md).
+
+⚠️ **Important Notice Regarding Content**<br>
+The contents of the `/content`, `/public`, and `/assets` directories (such as media files, 3D models, JSON/YAML/Markdown data, etc.) are **not** licensed under MIT.<br>
+These materials remain the intellectual property of their respective creators and are included here only for use within this project.
+
+You **may not** reuse, redistribute, or repurpose these materials without obtaining explicit permission from their authors.
+
+Please refer to the [LICENSE.md](./LICENSE.md) file for full details.
