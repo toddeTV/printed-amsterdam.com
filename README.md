@@ -1,11 +1,11 @@
-# printed-amsterdam.com
+# printed-europe.com
 
-This is the project for the [printed-amsterdam.com](https://printed-amsterdam.com) conference website build with ❤️ & [NuxtJS](https://github.com/nuxt/nuxt).
+This is the project for the [printed-europe.com](https://printed-europe.com) conference website build with ❤️ & [NuxtJS](https://github.com/nuxt/nuxt).
 
 ## Sponsoring
 
 If you like this project and want to support us, we would be very happy to see you as a sponsor on GitHub ❤️<br>
-You can find the `Sponsor` button on the top right of the [GitHub project page](https://github.com/toddeTV/printed-amsterdam.com).<br>
+You can find the `Sponsor` button on the top right of the [GitHub project page](https://github.com/toddeTV/printed-europe.com).<br>
 Thanks a lot for the support <3
 
 ## Production
@@ -57,8 +57,8 @@ type foo = { bar: 2 }
 
 ## Contributors
 
-<a href="https://github.com/toddeTV/printed-amsterdam.com/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=toddeTV/printed-amsterdam.com" />
+<a href="https://github.com/toddeTV/printed-europe.com/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=toddeTV/printed-europe.com" />
 </a>
 
 ## License
