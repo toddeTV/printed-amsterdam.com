@@ -1,8 +1,8 @@
 {
-  "name": "printed-amsterdam.com",
+  "name": "printed-europe.com",
   "type": "module",
   "packageManager": "pnpm@10.8.1+sha512.c50088ba998c67b8ca8c99df8a5e02fd2ae2e2b29aaf238feaa9e124248d3f48f9fb6db2424949ff901cffbb5e0f0cc1ad6aedb602cd29450751d11c35023677",
-  "description": "This is the project for the https://printed-amsterdam.com conference website build with ❤️ & NuxtJS.",
+  "description": "This is the project for the https://printed-europe.com conference website build with ❤️ & NuxtJS.",
   "author": "Thorsten Seyschab <business@todde.tv> (https://todde.tv/)",
   "contributors": [
     {
@@ -12,13 +12,13 @@
     }
   ],
   "license": "SEE LICENSE IN LICENSE.md",
-  "homepage": "https://printed-amsterdam.com/",
+  "homepage": "https://printed-europe.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toddeTV/printed-amsterdam.com.git"
+    "url": "git+https://github.com/toddeTV/printed-europe.com.git"
   },
   "bugs": {
-    "url": "https://github.com/toddeTV/printed-amsterdam.com/issues"
+    "url": "https://github.com/toddeTV/printed-europe.com/issues"
   },
   "keywords": [
     "website",
