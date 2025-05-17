@@ -55,11 +55,41 @@ type foo = { bar: 2 }
 
 <!-- TODO -->
 
-## Contributors
+## Contribution & Attribution
+
+### Project Contributors
 
 <a href="https://github.com/toddeTV/printed-europe.com/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=toddeTV/printed-europe.com" />
 </a>
+
+### Current Core Team Members
+
+- [Thorsten Seyschab](https://todde.tv) as Project Founder & Lead.
+
+### Acknowledgments
+
+**Special Thanks:**<br>
+_(People who provided valuable help on specific topics or issues)_
+
+- [Alexander Lichter](https://github.com/TheAlexLichter) as a guest on one of the Twitch live streams, contributing to the brainstorming & creation of the main project structure.
+- [Andreas Fehn](https://github.com/fehnomenal) as a guest on one of the Twitch live streams, contributing to the creation of the data model for the content collections and schemas.
+
+**Helpful Projects:**<br>
+_(Projects that provided valuable inspiration or resources.)_
+
+- \[currently none\]
+
+**Additional Tools:**<br>
+_(excluding those listed in `./package.json`)_
+
+- [Twitch @toddeTV](https://twitch.tv/toddeTV) was used for live streaming the development of this project.
+- [GitHub Copilot](https://github.com/features/copilot) was used in private mode for programming questions.
+
+**Assets & Materials Used:**<br>
+_(including images & 3D models; mostly only those requiring attribution)_
+
+- \[currently none\]
 
 ## License
 
