@@ -3,9 +3,15 @@ import type { SpeakersCollectionItem, StagesCollectionItem, TalksCollectionItem 
 
 const route = useRoute()
 
-const { data: stages } = await useAsyncData(`${route.path}-stages`, () => queryCollection('stages').all())
-const { data: speakers } = await useAsyncData(`${route.path}-speakers`, () => queryCollection('speakers').all())
-const { data: talks } = await useAsyncData(`${route.path}-talks`, () => queryCollection('talks').all())
+const [
+  { data: stages },
+  { data: speakers },
+  { data: talks },
+] = await Promise.all([
+  useAsyncData(`${route.path}-stages`, () => queryCollection('stages').all()),
+  useAsyncData(`${route.path}-speakers`, () => queryCollection('speakers').all()),
+  useAsyncData(`${route.path}-talks`, () => queryCollection('talks').all()),
+])
 
 type ProcessedDataType = Omit<TalksCollectionItem, 'speakers' | 'stage'> & {
   speakers: SpeakersCollectionItem[]

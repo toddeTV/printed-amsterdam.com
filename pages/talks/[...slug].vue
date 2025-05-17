@@ -13,10 +13,15 @@ if (!talk.value) {
 }
 
 const slug_stage = talk.value.stage
-const { data: stage } = await useAsyncData(`${route.path}-stage`, () => queryCollection('stages').where('slug', '=', slug_stage).first())
-
 const slug_speakers = talk.value.speakers
-const { data: speakers } = await useAsyncData(`${route.path}-speakers`, () => queryCollection('speakers').where('slug', 'IN', slug_speakers).all())
+
+const [
+  { data: stage },
+  { data: speakers },
+] = await Promise.all([
+  useAsyncData(`${route.path}-stage`, () => queryCollection('stages').where('slug', '=', slug_stage).first()),
+  useAsyncData(`${route.path}-speakers`, () => queryCollection('speakers').where('slug', 'IN', slug_speakers).all()),
+])
 
 const title = talk.value.seo.title || talk.value.title
 const description = talk.value.seo.description || talk.value.description
