@@ -1,15 +1,34 @@
 <script setup lang="ts">
-const { data } = await useAsyncData(() => queryCollection('pages').path('/pages').first())
+const route = useRoute()
+
+const { data } = await useAsyncData(route.path, () => queryCollection('index').first())
+
+if (!data.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Landing Page not Found',
+    fatal: true,
+  })
+}
+
+const title = data.value.seo.title || data.value.title
+const description = data.value.seo.description || data.value.description
 
 useSeoMeta({
-  title: data.value?.title,
-  description: data.value?.description,
+  title,
+  ogTitle: title,
+
+  description,
+  ogDescription: description,
 })
 </script>
 
 <template>
-  <ContentRenderer v-if="data?.body" :value="data" />
-  <div v-else>
-    Home not found
-  </div>
+  <template v-if="data">
+    Home goes here
+    <ContentRenderer v-if="data.body" :value="data" />
+    <div v-else>
+      Home not found
+    </div>
+  </template>
 </template>
