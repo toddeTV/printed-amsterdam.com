@@ -1,11 +1,11 @@
-# printed-amsterdam.com
+# printed-europe.com
 
-This is the project for the [printed-amsterdam.com](https://printed-amsterdam.com) conference website build with ❤️ & [NuxtJS](https://github.com/nuxt/nuxt).
+This is the project for the [printed-europe.com](https://printed-europe.com) conference website build with ❤️ & [NuxtJS](https://github.com/nuxt/nuxt).
 
 ## Sponsoring
 
 If you like this project and want to support us, we would be very happy to see you as a sponsor on GitHub ❤️<br>
-You can find the `Sponsor` button on the top right of the [GitHub project page](https://github.com/toddeTV/printed-amsterdam.com).<br>
+You can find the `Sponsor` button on the top right of the [GitHub project page](https://github.com/toddeTV/printed-europe.com).<br>
 Thanks a lot for the support <3
 
 ## Production
@@ -57,10 +57,18 @@ type foo = { bar: 2 }
 
 ## Contributors
 
-<a href="https://github.com/toddeTV/printed-amsterdam.com/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=toddeTV/printed-amsterdam.com" />
+<a href="https://github.com/toddeTV/printed-europe.com/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=toddeTV/printed-europe.com" />
 </a>
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
+The source code in this repository is licensed under the [MIT License](./LICENSE.md).
+
+⚠️ **Important Notice Regarding Content**<br>
+The contents of the `/content`, `/public`, and `/assets` directories (such as media files, 3D models, JSON/YAML/Markdown data, etc.) are **not** licensed under MIT.<br>
+These materials remain the intellectual property of their respective creators and are included here only for use within this project.
+
+You **may not** reuse, redistribute, or repurpose these materials without obtaining explicit permission from their authors.
+
+Please refer to the [LICENSE.md](./LICENSE.md) file for full details.
