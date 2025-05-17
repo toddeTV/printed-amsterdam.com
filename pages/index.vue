@@ -8,7 +8,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <ContentRenderer v-if="data" :value="data" />
+  <ContentRenderer v-if="data.body" :value="data" />
   <div v-else>
     Home not found
   </div>
