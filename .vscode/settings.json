@@ -59,6 +59,7 @@
   "npm.packageManager": "pnpm",
   "prettier.enable": false,
   "search.exclude": {
+    "**/.nuxt": true,
     "**/.output": true,
     "**/.pnp.*": true,
     "**/dist": true,
