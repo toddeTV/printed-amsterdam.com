@@ -20,6 +20,8 @@ export default antfu(
           'error',
           {
             code: 120,
+            // ignore the `packageManager` in `package.json`
+            ignorePattern: '^\\s*"packageManager":\\s*["\']',
           },
         ],
       },
