@@ -2,7 +2,8 @@
 const route = useRoute()
 
 const slug_speaker = String(route.params.slug)
-const { data: speaker } = await useAsyncData(route.path, () => queryCollection('speakers').where('slug', '=', slug_speaker).first())
+const { data: speaker } = await useAsyncData(route.path, () =>
+  queryCollection('speakers').where('slug', '=', slug_speaker).first())
 
 if (!speaker.value) {
   throw createError({
@@ -12,7 +13,8 @@ if (!speaker.value) {
   })
 }
 
-const { data: talks } = await useAsyncData(`${route.path}-talks`, () => queryCollection('talks').where('speakers', 'LIKE', `%"${slug_speaker}"%`).all())
+const { data: talks } = await useAsyncData(`${route.path}-talks`, () =>
+  queryCollection('talks').where('speakers', 'LIKE', `%"${slug_speaker}"%`).all())
 
 const title = speaker.value.seo.title || speaker.value.title
 const description = speaker.value.seo.description || speaker.value.description
