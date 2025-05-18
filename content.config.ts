@@ -16,6 +16,19 @@ export default defineContentConfig({
       source: 'pages/**/*.md',
     }),
 
+    // -------- standalone data
+
+    sponsors: defineCollection({
+      type: 'data',
+      source: 'sponsors/**/*.yml',
+      schema: z.object({
+        slug: z.string().describe('The UNIQUE slug of the sponsor. This is used to identify and '
+          + 'link the sponsor to other collections. Never change this!'),
+        image: z.string().editor({ input: 'media' }).describe('The image of the speaker.'),
+        url: z.string().url().optional().describe('The URL of the sponsors webpage.'),
+      }),
+    }),
+
     // -------- linked data
 
     stages: defineCollection({
