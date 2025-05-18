@@ -15,6 +15,16 @@ export default antfu(
     stylistic: {
       indent: 2,
       quotes: 'single',
+      overrides: {
+        'style/max-len': [
+          'error',
+          {
+            code: 120,
+            // ignore the `packageManager` in `package.json`
+            ignorePattern: '^\\s*"packageManager":\\s*["\']',
+          },
+        ],
+      },
     },
 
     typescript: true,

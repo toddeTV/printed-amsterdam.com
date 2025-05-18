@@ -1,11 +1,13 @@
 # printed-europe.com
 
-This is the project for the [printed-europe.com](https://printed-europe.com) conference website build with ❤️ & [NuxtJS](https://github.com/nuxt/nuxt).
+This is the project for the [printed-europe.com](https://printed-europe.com) conference website build with ❤️ &
+[NuxtJS](https://github.com/nuxt/nuxt).
 
 ## Sponsoring
 
 If you like this project and want to support us, we would be very happy to see you as a sponsor on GitHub ❤️<br>
-You can find the `Sponsor` button on the top right of the [GitHub project page](https://github.com/toddeTV/printed-europe.com).<br>
+You can find the `Sponsor` button on the top right of the
+[GitHub project page](https://github.com/toddeTV/printed-europe.com).<br>
 Thanks a lot for the support <3
 
 ## Production
@@ -67,8 +69,10 @@ type foo = { bar: 2 }
 **Special Thanks:**<br>
 _(People who provided valuable help on specific topics or issues)_
 
-- [Alexander Lichter](https://github.com/TheAlexLichter) as a guest on one of the Twitch live streams, contributing to the brainstorming & creation of the main project structure.
-- [Andreas Fehn](https://github.com/fehnomenal) as a guest on one of the Twitch live streams, contributing to the creation of the data model for the content collections and schemas.
+- [Alexander Lichter](https://github.com/TheAlexLichter) as a guest on one of the Twitch live streams,
+  contributing to the brainstorming & creation of the main project structure.
+- [Andreas Fehn](https://github.com/fehnomenal) as a guest on one of the Twitch live streams, contributing
+  to the creation of the data model for the content collections and schemas.
 
 **Helpful Projects:**<br>
 _(Projects that provided valuable inspiration or resources.)_
@@ -91,9 +95,12 @@ _(including images & 3D models; mostly only those requiring attribution)_
 The source code in this repository is licensed under the [MIT License](./LICENSE.md).
 
 ⚠️ **Important Notice Regarding Content**<br>
-The contents of the `/content`, `/public`, and `/assets` directories (such as media files, 3D models, JSON/YAML/Markdown data, etc.) are **not** licensed under MIT.<br>
-These materials remain the intellectual property of their respective creators and are included here only for use within this project.
+The contents of the `/content`, `/public`, and `/assets` directories (such as media files, 3D models,
+JSON/YAML/Markdown data, etc.) are **not** licensed under MIT.<br>
+These materials remain the intellectual property of their respective creators and are included here
+only for use within this project.
 
-You **may not** reuse, redistribute, or repurpose these materials without obtaining explicit permission from their authors.
+You **may not** reuse, redistribute, or repurpose these materials without obtaining explicit permission
+from their authors.
 
 Please refer to the [LICENSE.md](./LICENSE.md) file for full details.

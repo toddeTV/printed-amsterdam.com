@@ -2,7 +2,8 @@
 const route = useRoute()
 
 const slug_talk = String(route.params.slug)
-const { data: talk } = await useAsyncData(route.path, () => queryCollection('talks').where('slug', '=', slug_talk).first())
+const { data: talk } = await useAsyncData(route.path, () =>
+  queryCollection('talks').where('slug', '=', slug_talk).first())
 
 if (!talk.value) {
   throw createError({
@@ -48,6 +49,7 @@ useSeoMeta({
       <div v-for="speaker in speakers" :key="speaker.slug">
         <NuxtLink :to="`/speakers/${speaker.slug}`">
           {{ speaker.name }}<br>
+          {{ speaker.image }}
           <NuxtImg class="w-16 h-16 object-cover" :src="speaker.image" />
         </NuxtLink>
       </div>
