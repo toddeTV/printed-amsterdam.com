@@ -15,6 +15,14 @@ export default antfu(
     stylistic: {
       indent: 2,
       quotes: 'single',
+      overrides: {
+        'style/max-len': [
+          'error',
+          {
+            code: 120,
+          },
+        ],
+      },
     },
 
     typescript: true,
