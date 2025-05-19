@@ -26,17 +26,18 @@ const items = computed(() => [
 </script>
 
 <template>
-  <UHeader>
+  <UHeader mode="slideover">
     <template #left>
-      <NuxtLink to="/">
+      <NuxtLink class="mr-0 md:mr-8" to="/">
         <AppLogo class="w-auto h-6 shrink-0" />
       </NuxtLink>
-    </template>
 
-    <UNavigationMenu
-      :items="items"
-      variant="link"
-    />
+      <UNavigationMenu
+        class="hidden lg:inline-flex"
+        :items="items"
+        variant="link"
+      />
+    </template>
 
     <template #right>
       <UColorModeButton />
