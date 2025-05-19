@@ -1,34 +1,64 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { FooterColumn } from '@nuxt/ui-pro'
 
 const yearStart = 2025
 const yearCurrent = new Date().getFullYear()
 const yearSpan = yearStart === yearCurrent ? yearStart : `${yearStart} - ${yearCurrent}`
 
-const items: NavigationMenuItem[] = [
+const columns: FooterColumn[] = [
   {
-    label: 'Become a sponsor',
-    to: '',
-  },
-  // {
-  //   label: 'Location',
-  //   to: '/faq/location',
-  // },
-  {
-    label: 'Contact',
-    to: '',
-  },
-  // {
-  //   label: 'Apply as Speaker',
-  //   to: '',
-  // },
-  {
-    label: 'Privacy Policy',
-    to: '',
+    label: 'Community',
+    children: [
+      {
+        label: 'Apply as Speaker',
+        to: '',
+      },
+      {
+        label: 'Become a sponsor',
+        to: '',
+      },
+      {
+        label: 'Location',
+        to: '/faq/location',
+      },
+    ],
   },
   {
-    label: 'Legal Notice',
-    to: '',
+    label: 'Legal Information',
+    children: [
+      {
+        label: 'Contact',
+        to: '',
+      },
+      {
+        label: 'Privacy Policy',
+        to: '',
+      },
+      {
+        label: 'Legal Notice',
+        to: '',
+      },
+    ],
+  },
+  {
+    label: 'Social Media',
+    children: [
+      {
+        label: 'Twitter',
+        icon: 'i-simple-icons-x',
+        to: 'https://x.com/PrintedEurope',
+      },
+      {
+        label: 'Linkedin',
+        icon: 'i-simple-icons-linkedin',
+        to: 'https://www.instagram.com/printedeurope',
+      },
+      {
+        label: 'Instagram',
+        icon: 'i-simple-icons-instagram',
+        to: 'https://www.linkedin.com/company/printed-worldconference',
+      },
+    ],
   },
 ]
 </script>
@@ -36,47 +66,22 @@ const items: NavigationMenuItem[] = [
 <template>
   <USeparator class="h-px" />
 
-  <UFooter>
+  <UFooter :ui="{ top: 'border-b border-default' }">
+    <template #top>
+      <UContainer>
+        <UFooterColumns :columns="columns" />
+      </UContainer>
+    </template>
+
     <template #left>
       <p class="text-muted text-sm">
-        Copyright © {{ yearSpan }}
+        Copyright © {{ yearSpan }}. All rights reserved.
       </p>
     </template>
 
-    <UNavigationMenu
-      :items="items"
-      :ui="{
-        list: 'flex-col xs:flex-row',
-        item: 'p-0',
-      }"
-      variant="link"
-    />
-
     <template #right>
-      <UButton
-        aria-label="X"
-        color="neutral"
-        icon="i-simple-icons-x"
-        target="_blank"
-        to="https://x.com/PrintedEurope"
-        variant="ghost"
-      />
-      <UButton
-        aria-label="X"
-        color="neutral"
-        icon="i-simple-icons-instagram"
-        target="_blank"
-        to="https://www.instagram.com/printedeurope"
-        variant="ghost"
-      />
-      <UButton
-        aria-label="X"
-        color="neutral"
-        icon="i-simple-icons-linkedin"
-        target="_blank"
-        to="https://www.linkedin.com/company/printed-worldconference"
-        variant="ghost"
-      />
+      <UColorModeButton />
+
       <UButton
         aria-label="GitHub"
         color="neutral"
