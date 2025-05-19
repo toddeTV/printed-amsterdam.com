@@ -51,7 +51,7 @@ useSeoMeta({
 
 <template>
   <template v-if="talks">
-    <AppHeader :description="description" :title="title" />
+    <UPageHeader :description="description" :title="title" />
 
     <div v-for="talk in processedData" :key="talk.slug">
       <NuxtLink :to="`/talks/${talk.slug}`">

@@ -30,7 +30,7 @@ useSeoMeta({
 
 <template>
   <template v-if="speaker">
-    <AppHeader :description="speaker.description" :title="speaker.title" />
+    <UPageHeader :description="speaker.description" :title="speaker.title" />
 
     <ContentRenderer v-if="speaker.body" :value="speaker" />
 
