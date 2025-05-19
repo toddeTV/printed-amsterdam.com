@@ -25,10 +25,20 @@ useSeoMeta({
 
 <template>
   <template v-if="data">
-    Home goes here
-    <ContentRenderer v-if="data.body" :value="data" />
-    <div v-else>
-      Home not found
-    </div>
+    <UPageHero
+      :description="data.description"
+      :title="data.title"
+    >
+      <template #top>
+        <div
+          class="absolute rounded-full dark:bg-primary blur-[300px] size-60 sm:size-80 transform
+                 -translate-x-1/2 left-1/2 -translate-y-80"
+        />
+      </template>
+    </UPageHero>
+
+    <UContainer v-for="(index, _nbr) in [...Array(20).keys()]" :key="index" class="mb-8">
+      <AppPlaceholder class="h-32" />
+    </UContainer>
   </template>
 </template>
