@@ -17,7 +17,7 @@ useSeoMeta({
 
 <template>
   <template v-if="speakers">
-    <AppHeader :description="description" :title="title" />
+    <UPageHeader :description="description" :title="title" />
 
     <div v-for="speaker in speakers" :key="speaker.slug">
       <NuxtLink :to="`/speakers/${speaker.slug}`">

@@ -38,7 +38,7 @@ useSeoMeta({
 
 <template>
   <template v-if="talk">
-    <AppHeader :description="talk.description" :title="talk.title" />
+    <UPageHeader :description="talk.description" :title="talk.title" />
 
     <div>
       Stage: {{ stage?.name }}
